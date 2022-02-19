@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <delay.h>
 
-#include "modbus/mb.h"
-#include "modbus/mb-packet.h"
+#include "../modbus/mb.h"
+#include "../modbus/mb-packet.h"
 
 char LCD_Buffer[64];
 

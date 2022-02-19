@@ -7,7 +7,7 @@ A=
 C=
 D=18/02/2022
 Files=8
-OpenedFiles=10
+OpenedFiles=1
 OF1=main.c
 Active1=1
 DebugOutputListFilesDirectory=Debug\List
@@ -20,21 +20,13 @@ OutputExecutableFilesDirectory=Release\Exe
 OutputLinkerFilesDirectory=Release\Exe
 AllowDisplayFunctionCallTree=1
 CleanUp=2
-F1=modbus\mb.c
-F2=modbus\mb-check.c
-F3=modbus\mb-crc.c
-F4=modbus\mb-link.c
-F5=modbus\mb-packet.c
-F6=modbus\mb-process.c
-F7=modbus\mb-table.c
-F8=main.c
 EditorPanelMode=0
 ActiveEditorPanel=0
 Active0=0
 EditorPanel0=0
 PageIndex0=0
 EditorPanel1=0
-TimeStamp1=1414749809
+TimeStamp1=1414753329
 PageIndex1=1
 OF2=modbus\mb-table.h
 Active2=0
@@ -81,6 +73,14 @@ Active10=0
 EditorPanel10=0
 TimeStamp10=1414743862
 PageIndex10=10
+F1=main.c
+F2=..\modbus\mb.c
+F3=..\modbus\mb-check.c
+F4=..\modbus\mb-crc.c
+F5=..\modbus\mb-link.c
+F6=..\modbus\mb-packet.c
+F7=..\modbus\mb-process.c
+F8=..\modbus\mb-table.c
 [CompilerDebug]
 Chip=ATmega8A
 CPUClock=8000000
@@ -179,8 +179,8 @@ WatchAVR8LAutoVariables=0
 UseEEPROMLocation0=1
 RebuildAll=0
 LinkageInformationPresent=1
-COFFileTimeStamp=1414749811
-Build=58
+COFFileTimeStamp=1414753331
+Build=59
 [DefinedSymbolsDebug]
 Count=0
 [Compiler]
@@ -282,7 +282,7 @@ UseEEPROMLocation0=1
 RebuildAll=1
 LinkageInformationPresent=0
 COFFileTimeStamp=-1
-Build=58
+Build=59
 IncludePath0=
 IncludePath1=
 IncludePath2=
@@ -514,7 +514,7 @@ L13=Enhanced function parameters passing: Yes
 L14=Automatic register allocation: Yes
 L15=Smart register allocation: Yes
 L16=
-L17=Build: 57
+L17=Build: 58
 L18=16044 line(s) compiled
 L19=No errors
 L20=1 warning(s)
@@ -534,9 +534,9 @@ L33=
 L34=Heap size: 0 byte(s)
 L35=
 L36=EEPROM usage: 0 byte(s), 0/0% of EEPROM
-L37=Program size: 2115 words (4230 bytes), 51/6% of FLASH
+L37=Program size: 2110 words (4220 bytes), 51/5% of FLASH
 Lines=38
-L38=456 words (912 bytes), 17/7% reduced by Code Compression
+L38=459 words (918 bytes), 17/9% reduced by Code Compression
 [BuildInfoAssembler]
 L1=AVRASM: AVR macro assembler 2.1.30 (build 592 Nov  7 2008 12:38:17)
 L2=Copyright (C) 1995-2008 ATMEL Corporation
@@ -546,7 +546,7 @@ L5=
 L6=ATmega8A memory use summary [bytes]:
 L7=Segment   Begin    End      Code   Data   Used    Size   Use%
 L8=---------------------------------------------------------------
-L9=[.cseg] 0x000000 0x001086   3698    532   4230    8192  51.6%
+L9=[.cseg] 0x000000 0x00107c   3688    532   4220    8192  51.5%
 L10=[.dseg] 0x000060 0x000267      0    263    263    1024  25.7%
 L11=[.eseg] 0x000000 0x000000      0      0      0     512   0.0%
 L12=
@@ -744,13 +744,13 @@ Row=0
 Column=0
 ScrollPosX=0
 ScrollPosY=0
-TimeStamp=1414752790
+TimeStamp=1414753340
 [Bookmarks11]
-TimeStamp=1414749809
-Row=105
-Column=31
+TimeStamp=1414753329
+Row=2
+Column=26
 ScrollPosX=0
-ScrollPosY=96
+ScrollPosY=0
 BK0=-1
 BK1=-1
 BK2=-1
@@ -793,85 +793,6 @@ BK6=-1
 BK7=-1
 BK8=-1
 BK9=-1
-[HeadersList]
-Files=8
-F1=C:\Users\Esmaeill\Desktop\MBAVR\slave\modbus\mb.c
-F2=C:\Users\Esmaeill\Desktop\MBAVR\slave\modbus\mb-check.c
-F3=C:\Users\Esmaeill\Desktop\MBAVR\slave\modbus\mb-crc.c
-F4=C:\Users\Esmaeill\Desktop\MBAVR\slave\modbus\mb-link.c
-F5=C:\Users\Esmaeill\Desktop\MBAVR\slave\modbus\mb-packet.c
-F6=C:\Users\Esmaeill\Desktop\MBAVR\slave\modbus\mb-process.c
-F7=C:\Users\Esmaeill\Desktop\MBAVR\slave\modbus\mb-table.c
-F8=C:\Users\Esmaeill\Desktop\MBAVR\slave\main.c
-[Header1]
-Files=12
-F1=C:\cvavr\inc\stdio.h
-F2=C:\cvavr\inc\io.h
-F3=C:\cvavr\inc\mega8.h
-F4=C:\cvavr\inc\mega8_bits.h
-F5=C:\cvavr\inc\stdarg.h
-F6=modbus\mb.h
-F7=C:\cvavr\inc\stdint.h
-F8=modbus\mb-check.h
-F9=modbus\mb-table.h
-F10=modbus\mb-process.h
-F11=modbus\mb-link.h
-F12=modbus\mb-packet.h
-[Header2]
-Files=4
-F1=modbus\mb-check.h
-F2=modbus\mb.h
-F3=C:\cvavr\inc\stdint.h
-F4=modbus\mb-table.h
-[Header3]
-Files=2
-F1=modbus\mb-crc.h
-F2=C:\cvavr\inc\stdint.h
-[Header4]
-Files=10
-F1=C:\cvavr\inc\stdio.h
-F2=C:\cvavr\inc\io.h
-F3=C:\cvavr\inc\mega8.h
-F4=C:\cvavr\inc\mega8_bits.h
-F5=C:\cvavr\inc\stdarg.h
-F6=modbus\mb.h
-F7=C:\cvavr\inc\stdint.h
-F8=modbus\mb-link.h
-F9=modbus\mb-crc.h
-F10=modbus\mb-check.h
-[Header5]
-Files=3
-F1=modbus\mb-packet.h
-F2=modbus\mb.h
-F3=C:\cvavr\inc\stdint.h
-[Header6]
-Files=11
-F1=C:\cvavr\inc\stdio.h
-F2=C:\cvavr\inc\io.h
-F3=C:\cvavr\inc\mega8.h
-F4=C:\cvavr\inc\mega8_bits.h
-F5=C:\cvavr\inc\stdarg.h
-F6=modbus\mb-process.h
-F7=modbus\mb.h
-F8=C:\cvavr\inc\stdint.h
-F9=modbus\mb-table.h
-F10=modbus\mb-link.h
-F11=modbus\mb-packet.h
-[Header7]
-Files=2
-F1=modbus\mb-table.h
-F2=C:\cvavr\inc\stdint.h
-[Header8]
-Files=9
-F1=C:\cvavr\inc\mega8.h
-F2=C:\cvavr\inc\mega8_bits.h
-F3=C:\cvavr\inc\stdio.h
-F4=C:\cvavr\inc\io.h
-F5=C:\cvavr\inc\stdarg.h
-F6=C:\cvavr\inc\delay.h
-F7=modbus\mb.h
-F8=C:\cvavr\inc\stdint.h
-F9=modbus\mb-table.h
 [FoldedCode2]
 Blocks=0
 [FoldedCode4]
@@ -886,9 +807,88 @@ Blocks=0
 Blocks=0
 [FoldedCode6]
 Blocks=0
-[FoldedCode11]
-Blocks=0
 [FoldedCode1]
 Blocks=0
 [FoldedCode7]
+Blocks=0
+[HeadersList]
+Files=8
+F1=C:\Users\Esmaeill\Desktop\MBAVR\slave\main.c
+F2=C:\Users\Esmaeill\Desktop\MBAVR\modbus\mb.c
+F3=C:\Users\Esmaeill\Desktop\MBAVR\modbus\mb-check.c
+F4=C:\Users\Esmaeill\Desktop\MBAVR\modbus\mb-crc.c
+F5=C:\Users\Esmaeill\Desktop\MBAVR\modbus\mb-link.c
+F6=C:\Users\Esmaeill\Desktop\MBAVR\modbus\mb-packet.c
+F7=C:\Users\Esmaeill\Desktop\MBAVR\modbus\mb-process.c
+F8=C:\Users\Esmaeill\Desktop\MBAVR\modbus\mb-table.c
+[Header1]
+Files=9
+F1=C:\cvavr\inc\mega8.h
+F2=C:\cvavr\inc\mega8_bits.h
+F3=C:\cvavr\inc\stdio.h
+F4=C:\cvavr\inc\io.h
+F5=C:\cvavr\inc\stdarg.h
+F6=C:\cvavr\inc\delay.h
+F7=..\modbus\mb.h
+F8=C:\cvavr\inc\stdint.h
+F9=..\modbus\mb-table.h
+[Header2]
+Files=12
+F1=C:\cvavr\inc\stdio.h
+F2=C:\cvavr\inc\io.h
+F3=C:\cvavr\inc\mega8.h
+F4=C:\cvavr\inc\mega8_bits.h
+F5=C:\cvavr\inc\stdarg.h
+F6=..\modbus\mb.h
+F7=C:\cvavr\inc\stdint.h
+F8=..\modbus\mb-check.h
+F9=..\modbus\mb-table.h
+F10=..\modbus\mb-process.h
+F11=..\modbus\mb-link.h
+F12=..\modbus\mb-packet.h
+[Header3]
+Files=4
+F1=..\modbus\mb-check.h
+F2=..\modbus\mb.h
+F3=C:\cvavr\inc\stdint.h
+F4=..\modbus\mb-table.h
+[Header4]
+Files=2
+F1=..\modbus\mb-crc.h
+F2=C:\cvavr\inc\stdint.h
+[Header5]
+Files=10
+F1=C:\cvavr\inc\stdio.h
+F2=C:\cvavr\inc\io.h
+F3=C:\cvavr\inc\mega8.h
+F4=C:\cvavr\inc\mega8_bits.h
+F5=C:\cvavr\inc\stdarg.h
+F6=..\modbus\mb.h
+F7=C:\cvavr\inc\stdint.h
+F8=..\modbus\mb-link.h
+F9=..\modbus\mb-crc.h
+F10=..\modbus\mb-check.h
+[Header6]
+Files=3
+F1=..\modbus\mb-packet.h
+F2=..\modbus\mb.h
+F3=C:\cvavr\inc\stdint.h
+[Header7]
+Files=11
+F1=C:\cvavr\inc\stdio.h
+F2=C:\cvavr\inc\io.h
+F3=C:\cvavr\inc\mega8.h
+F4=C:\cvavr\inc\mega8_bits.h
+F5=C:\cvavr\inc\stdarg.h
+F6=..\modbus\mb-process.h
+F7=..\modbus\mb.h
+F8=C:\cvavr\inc\stdint.h
+F9=..\modbus\mb-table.h
+F10=..\modbus\mb-link.h
+F11=..\modbus\mb-packet.h
+[Header8]
+Files=2
+F1=..\modbus\mb-table.h
+F2=C:\cvavr\inc\stdint.h
+[FoldedCode11]
 Blocks=0

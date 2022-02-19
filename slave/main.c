@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <delay.h>
 
-#include "modbus/mb.h"
-#include "modbus/mb-table.h"
+#include "../modbus/mb.h"
+#include "../modbus/mb-table.h"
 
 // Voltage Reference: Int., cap. on AREF
 #define ADC_VREF_TYPE ((1<<REFS1) | (1<<REFS0) | (0<<ADLAR))
