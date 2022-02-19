@@ -41,11 +41,10 @@ interrupt [USART_RXC] void usart_rx_isr(void)
 
 void USART_Transmit( unsigned char data )
 {
-/* Wait for empty transmit buffer */
-while ( !( UCSRA & (1<<UDRE)) )
-;
-/* Put data into buffer, sends the data */
-UDR = data;
+   /* Wait for empty transmit buffer */
+   while ( !( UCSRA & (1<<UDRE)) );
+   /* Put data into buffer, sends the data */
+   UDR = data;
 }
 
 void send_data(uint8_t *Data,uint8_t Len)
