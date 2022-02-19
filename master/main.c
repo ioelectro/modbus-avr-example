@@ -1,3 +1,8 @@
+/*
+ By Liyanboy74
+ https://github.com/liyanboy74
+*/
+
 #include <mega8.h>
 #include <alcd.h>
 #include <stdio.h>
