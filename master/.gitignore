@@ -1,0 +1,7 @@
+*
+
+!.gitignore
+!*.c
+!*.prj
+!*.md
+!*.txt
